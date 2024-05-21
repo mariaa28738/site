@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <BODY background="https://i.im.ge/2024/05/21/KufRlh.Design-sem-nome-10.png">
+    <ul id="menu-h">
+        <li><a class="link" href="https://chatgpt.com/?oai-dm=1">Suporte</a></li>
+        <li><a class="link" href="index.html">Home</a></li>
+        <li>
+            <div class="dropdown">
+                <span>Conheça as Desenvolvedoras</span>
+                <div class="dropdown-content">
+                    <a class="link" href="https://mariaa28738.github.io/curriculo/">Maria Fernanda Delfino</a><br>
+                    <a class="link" href="https://mariaa28738.github.io/curriculoisa/">Isabella Schlemper</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div id="planos">
+        <div> 
+            <img src="https://i.im.ge/2024/05/21/KubTOD.Banner-Lancamento-2.png" class="banner-image" alt="Banner">
+            <h1>Escute enquanto navega!</h1>
+            <audio controls autoplay>
+                <source src="https://s5.aconvert.com/convert/p3r68-cdx67/idbte-exlld.mp3" type="audio/mp3">
+              </audio
+            <br><br>
+        </div>
+        <div class="plan">
+            <h2>Destaques e recomendados</h2>
+            <div class="gallery-container" id="gallery1">
+                <img src="https://i.im.ge/2024/05/20/KuwWhS.075853BC-F422-4EA3-A768-9984FC1129EC.png" class="gallery-image" alt="Image1">
+                <img src="https://i.im.ge/2024/05/20/KuwZYz.42638F17-E3F2-42DB-BA5F-CE40B05D103F.png" class="gallery-image" alt="Image2">
+                <img src="https://i.im.ge/2024/05/20/KuwfaF.82BB7A52-AD77-437A-9603-98C2D9145352.png" class="gallery-image" alt="Image3">
+            </div>
+            <button onclick="showPrevImage('gallery1')">Anterior</button>
+            <button onclick="showNextImage('gallery1')">Próximo</button>
+        </div>
+        <div class="plan">
+            <h2>Ofertas especiais</h2>
+            <div class="gallery-container" id="gallery2">
+                <img src="https://i.im.ge/2024/05/20/KuwbOx.F4713AC4-6B71-4985-BC3A-8ADFC0DCEC45.png" class="gallery-image" alt="Image1">
+                <img src="https://i.im.ge/2024/05/20/Kuw3zG.9F95929A-4360-4127-A67C-D10E804CE1A2.png" class="gallery-image" alt="Image2">
+                <img src="https://i.im.ge/2024/05/20/KuwRoy.353374CC-910E-440E-AB1F-AEAE049EE03A.png" class="gallery-image" alt="Image3">
+            </div>
+            <button onclick="showPrevImage('gallery2')">Anterior</button>
+            <button onclick="showNextImage('gallery2')">Próximo</button>
+        </div>
+        <div class="plan">
+            <h2>Tendências entre amigos</h2>
+            <div class="gallery-container" id="gallery3">
+                <img src="https://i.im.ge/2024/05/20/KuwxyL.43D41AC2-093A-4EAC-98C6-C71089972AB9.png" class="gallery-image" alt="Image1">
+                <img src="https://i.im.ge/2024/05/20/KuwABT.D77B415E-48FC-4C31-BE99-419ED59335B1.png" class="gallery-image" alt="Image2">
+                <img src="https://i.im.ge/2024/05/20/Kuw6Wm.6DF18C2C-86D0-441D-8F09-A96B59AEDB3A.png" class="gallery-image" alt="Image3">
+            </div>
+            <button onclick="showPrevImage('gallery3')">Anterior</button>
+            <button onclick="showNextImage('gallery3')">Próximo</button>
+        </div>
+        <div class="plan">
+            <h2>Novidades</h2>
+            <div class="gallery-container" id="gallery4">
+                <img src="https://i.im.ge/2024/05/21/KuYnYX.Banner-Lancamento-3.png" class="gallery-image4" alt="Image1">
+            </div>
+    </div>
+        <h3>Email para contato:</h3>
+        <p>isabella.bernardo@aluno.fmpsc.edu.br</p>
+        <p>maria.delfino@aluno.fmpsc.edu.br</p>
+    <script>
+        function showNextImage(galleryId) {
+            const gallery = document.getElementById(galleryId);
+            const images = gallery.getElementsByClassName('gallery-image');
+            gallery.appendChild(images[0]);
+        }
+
+        function showPrevImage(galleryId) {
+            const gallery = document.getElementById(galleryId);
+            const images = gallery.getElementsByClassName('gallery-image');
+            gallery.insertBefore(images[images.length - 1], images[0]);
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const gallery1Images = document.querySelectorAll('#gallery1 .gallery-image');
+            gallery1Images[0].addEventListener('click', function() {
+                window.open('https://mariaa28738.github.io/imagem1/', '_blank');
+            });
+            gallery1Images[1].addEventListener('click', function() {
+                window.open('https://mariaa28738.github.io/imagem2/', '_blank');
+            });
+            gallery1Images[2].addEventListener('click', function() {
+                window.open('https://mariaa28738.github.io/imagem3/', '_blank');
+            });
+
+            const gallery2Images = document.querySelectorAll('#gallery2 .gallery-image');
+            gallery2Images[0].addEventListener('click', function() {
+                window.open('https://mariaa28738.github.io/imagem4/', '_blank');
+            });
+            gallery2Images[1].addEventListener('click', function() {
+                window.open('https://mariaa28738.github.io/imagem5/', '_blank');
+            });
+            gallery2Images[2].addEventListener('click', function() {
+                window.open('https://mariaa28738.github.io/imagem6/', '_blank');
+            });
+
+            const gallery3Images = document.querySelectorAll('#gallery3 .gallery-image');
+            gallery3Images[0].addEventListener('click', function() {
+                window.open('https://mariaa28738.github.io/imagem7/', '_blank');
+            });
+            gallery3Images[1].addEventListener('click', function() {
+                window.open('https://mariaa28738.github.io/imagem8/', '_blank');
+            });
+            gallery3Images[2].addEventListener('click', function() {
+                window.open('https://mariaa28738.github.io/imagem9/', '_blank');
+            });
+        });
+    </script>
+</body>
+</html>

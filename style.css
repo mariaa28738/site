@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+h4 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#menu-h {
+    list-style-type: none;
+    margin-top: 0%;
+    padding: 20px;
+    background-color: #56AA4B;
+    margin-bottom: 0%;
+    color: white;
+}
+
+#menu-h li {
+    display: inline;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(40, 40, 40);
+    min-width: 200px;
+    padding: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.listas {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#planos {
+    display: center;
+    text-align: center;
+}
+
+#texto_final {
+    margin-left: 15px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.gallery-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-image {
+    max-width: 400px;
+    height: auto;
+    display: none;
+    margin: 0 auto; /* Centralizar a imagem horizontalmente */
+}
+
+.gallery-container img:first-child {
+    display: block;
+}
+/* Estilo para aumentar o tamanho da imagem da quarta galeria */
+ .gallery-image4{
+    width: 100%; /* Defina o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+.banner-image {
+    width: 100%; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
